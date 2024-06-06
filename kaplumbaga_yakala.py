@@ -17,7 +17,7 @@ y_koordinat = [20, 10, 0, -10]
 
 def skor_kurulum_turtle():
     skor_turtle.hideturtle()
-    skor_turtle.color("blue")
+    skor_turtle.color("orange")
     skor_turtle.penup()
     top_heigh = ekran.window_height() / 2
     y = top_heigh - top_heigh / 10
@@ -32,7 +32,7 @@ def yap_turtle(x, y):
         global skor
         skor += + 1
         skor_turtle.clear()
-        skor_turtle.write("Score : {}".format(skor), move=False, align="center", font=FONT)
+        skor_turtle.write("Skor : {}".format(skor), move=False, align="center", font=FONT)
         print(x, y)
 
     t.onclick(handle_click)
